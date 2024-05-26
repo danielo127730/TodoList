@@ -1,62 +1,64 @@
-body{
-  background-color: aqua;
+body {
+  background-color: aqua; /* Default background color */
 }
 
+body.dark-mode {
+  background-color: #222; /* Dark mode background */
+}
+.dark-mode-toggle{
+  float: right;
+  background-color: #222; 
+  padding: 5px;
 
+}
 
-.to-do-list{
-  font-family:Arial,sans-serif;
+.to-do-list {
+  align-items: center;
+  font-family: Arial, sans-serif;
   text-align: center;
-  margin-top: 100px;
-
-
-
+  margin-top: 10px;
 }
 
-h1{
+h1 {
   font-size: 4rem;
-
 }
-button{
+
+button {
   font-size: 2rem;
   font-weight: bold;
-  padding : 10px 20px;
+  padding: 10px 20px;
   color: aliceblue;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition : background-color 0.5s ease;
-
-
+  transition: background-color 0.5s ease;
 }
 
-.add-button{
-  background-color: hsl(125,47%,54%);
-
-}
-.add-button:hover{
-  background-color: hsl(125,47%,44%);
-  
-}
-.delete-button{
-  background-color: hsl(10,90%,50%);
-
-}
-.delete-button:hover{
-  background-color: hsl(10,90%,40%);
-
+.add-button {
+  background-color: hsl(125, 47%, 54%);
 }
 
-.move-button{
+.add-button:hover {
+  background-color: hsl(125, 47%, 44%);
+}
+
+.delete-button {
+  background-color: hsl(10, 90%, 50%);
+}
+
+.delete-button:hover {
+  background-color: hsl(10, 90%, 40%);
+}
+
+.move-button {
   background-color: hsl(212, 90%, 50%);
-
-}
-.move-button:hover{
-  background-color: hsl(212,90%,40%);
-
 }
 
-input[type="text"]{
+.move-button:hover {
+  background-color: hsl(212, 90%, 40%);
+}
+
+input[type="text"] {
   font-size: 2rem;
   padding: 10px;
   border: 2px solid grey;
@@ -64,11 +66,11 @@ input[type="text"]{
   color: grey;
 }
 
-ol{
+ol {
   padding: 0;
-
 }
-li{
+
+li {
   font-size: 2rem;
   font-weight: bold;
   padding: 15px;
@@ -78,12 +80,17 @@ li{
   border-radius: 5px;
   display: flex;
   align-items: center;
-
 }
-.text{
+.dark-mode li {
+  background-color: grey;
+}
+
+.text {
   flex: 1;
 }
-.delete-button, .move-button{
+
+.delete-button,
+.move-button {
   padding: 8px 12px;
   font-size: 1.5rem;
   margin-left: 10px;
