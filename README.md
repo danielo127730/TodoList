@@ -1,4 +1,7 @@
-Adds elements
-Deletes elements
+Adds elements,
+
+Deletes elements,
+
 Order elements
+,
 Darkmode option
